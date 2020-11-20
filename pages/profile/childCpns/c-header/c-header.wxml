@@ -1,0 +1,17 @@
+<!--pages/profile/childCpns/c-header/c-header.wxml-->
+<view class='header'>
+  <view class='avatar'>
+    <image class="image" src="{{userInfo.avatarUrl? userInfo.avatarUrl : '/images/profile/avatar.png'}}" />
+  </view>
+  <view class='login-info' bindtap="getUserInfo">
+    <view class='login'>{{userInfo.nickName ? userInfo.nickName : '登录/注册'}}</view>
+    <view class='phone'>
+      <image class="image" src="/images/profile/phone.png" />
+      暂无绑定手机号
+    </view>
+  </view>
+  <view class='arrow'>
+    <view wx:if="{{userInfo.nickName}}" bindtap="logout">退出</view>
+    <image wx:if="{{!userInfo.nickName}}" class="image" src="/images/common/arrow-right.png" />
+  </view>
+</view>

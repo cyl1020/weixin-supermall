@@ -1,0 +1,14 @@
+<!--pages/cart/cart.wxml-->
+<view class='cart'>
+  <scroll-view class='cart-list' scroll-y>
+    <view class="no-goods" wx:if="{{cartList.length===0}}">
+      <view class="text">购物车还没有商品哦~~~</view>
+      <button class="tohome" type="warn" bindtap="tohome">去逛逛</button>
+    </view>
+    <block wx:for="{{cartList}}" wx:key="index">
+      <c-cart-list-item goods="{{item}}" index="{{index}}" data-item="{{item}}" bind:changeChecked="changeChecked" />
+    </block>
+  </scroll-view>
+  <c-bottom-bar price="{{price}}" counter="{{counter}}" allChecked="{{allChecked}}" bind:allChecked="allChecked"
+    bind:payment="payment" />
+</view>

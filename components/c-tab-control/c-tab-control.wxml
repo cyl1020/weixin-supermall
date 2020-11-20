@@ -1,0 +1,8 @@
+<!--components/c-tab-control/c-tab-control.wxml-->
+<view class="tabcontrol">
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="tabcontrol-item" bindtap="handleClick" data-index="{{index}}">
+      <text class="{{currentindex === index ? 'nav' : ''}}">{{item}}</text>
+    </view>
+  </block>
+</view>

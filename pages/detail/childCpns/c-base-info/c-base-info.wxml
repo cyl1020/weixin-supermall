@@ -1,0 +1,22 @@
+<!--pages/detail/childCpns/c-base-info/c-base-info.wxml-->
+<view class="baseinfo">
+  <view class="title">{{baseInfo.title}}</view>
+  <view class="price">
+    <text class="new">{{baseInfo.price}}</text>
+    <text class="old">{{baseInfo.oldPrice}}</text>
+    <text class="discount">{{baseInfo.discountDesc || '暂时没有促销信息，敬请期待'}}</text>
+  </view>
+  <view class="columns">
+    <block wx:for="{{baseInfo.columns}}" wx:key="index">
+      <text>{{item}}</text>
+    </block>
+  </view>
+  <view class="services">
+    <block wx:for="{{baseInfo.services}}" wx:key="index">
+      <view class="item" wx:if="{{item.name !== '延误必赔'}}">
+        <image class="image" src="{{item.icon}}" />
+        <text class="name">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

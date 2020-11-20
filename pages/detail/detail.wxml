@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <scroll-view class="content" scroll-y scroll-with-animation="true" scroll-top="{{scrolltop}}" bindscroll="scroll">
+    <c-swiper class="swiper" banner="{{topImages}}" height="{{true}}" wx:if="{{topImagesShow}}" />
+    <c-base-info baseInfo="{{baseInfo}}" wx:if="{{baseInfoShow}}" />
+    <c-shop-info class="shopinfo" shopInfo="{{shopInfo}}" wx:if="{{shopInfoShow}}" />
+    <c-goods-info class="goodsinfo" detailInfo="{{detailInfo}}" wx:if="{{detailInfoShow}}" />
+    <c-params-info class="paramsinfo" paramsInfo="{{paramsInfo}}" wx:if="{{paramsInfoShow}}" />
+    <c-goods class="recommend" goodslist="{{recommend}}" wx:if="{{recommendShow}}" />
+    <c-slide class="slide" wx:if="{{show}}" bind:changeTop="changeTop" />
+    <c-back-top wx:if="{{isShow}}" bindtap="backtop" bottom="{{180}}" />
+  </scroll-view>
+</view>
+<c-bottom-tab wx:if="{{show}}" bind:addCart="addCart"/>

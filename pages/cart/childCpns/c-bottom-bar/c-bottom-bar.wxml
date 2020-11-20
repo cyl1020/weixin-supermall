@@ -1,0 +1,14 @@
+<!--pages/cart/childCpns/c-bottom-bar/c-bottom-bar.wxml-->
+<view class='bottom-bar'>
+  <view class='check-box' bindtap="allChecked">
+    <icon class='check-icon icon' 
+      type='success' size='18' 
+      style='border-color: {{allChecked ? "#ff5777": "#aaa"}};' 
+      color='{{allChecked ? "#ff5777": "#fff"}}'/>
+    <view>全选</view>
+  </view>
+  <view class='counter'>
+    总计 : ¥{{price}}
+  </view>
+  <view class='payment' bindtap="payment">去结算({{counter}})</view>
+</view>

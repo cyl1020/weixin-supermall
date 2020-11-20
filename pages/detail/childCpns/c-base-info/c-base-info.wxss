@@ -1,0 +1,73 @@
+/* pages/detail/childCpns/c-base-info/c-base-info.wxss */
+.baseinfo {
+  margin: 20rpx 0rpx;
+  padding: 0 10rpx;
+  border-bottom: 12rpx solid #ececec;
+}
+
+.baseinfo .title {
+  font-size: 34rpx;
+  line-height: 50rpx;
+  margin: 10rpx 0;
+}
+
+.price {
+  margin-bottom: 36rpx;
+}
+
+.price .new {
+  font-size: 36rpx;
+  color: #ff5777;
+  margin: 0 20rpx;
+  margin-left: 10rpx;
+}
+
+.price .old {
+  font-size: 32rpx;
+  text-decoration: line-through;
+  margin-right: 16rpx;
+}
+
+.price .discount {
+  background-color: #ff5777;
+  border-radius: 16rpx;
+  padding: 4rpx 8rpx;
+  position: relative;
+  top: -10rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  padding-bottom: 16rpx;
+  border-bottom: 8rpx solid #ececec;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24rpx 0;
+}
+
+.services .item {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  text-align: left;
+}
+
+.services .item:first-child {
+  margin-right: 30rpx;
+}
+
+.services .image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 4rpx;
+  position: relative;
+  top: 4rpx;
+}

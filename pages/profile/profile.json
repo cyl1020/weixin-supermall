@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "c-header": "./childCpns/c-header/c-header",
+    "c-info": "./childCpns/c-info/c-info",
+    "c-list-view": "./childCpns/c-list-view/c-list-view"
+  },
+  "navigationBarTitleText": "个人信息"
+}

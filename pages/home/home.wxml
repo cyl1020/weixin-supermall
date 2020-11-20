@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <c-tab-control list='{{title}}' bind:changeIndex="changeIndex" class="tab-control {{!isShow ? 'none' : ' '}}" />
+  <scroll-view class="content" scroll-y scroll-with-animation="true" bindscrolltolower="pulling" bindscroll="scroll"
+  enhanced scroll-top="{{scrollTop}}">
+    <c-swiper banner="{{banner.list}}" />
+    <c-recommend recommend="{{recommend.list}}" />
+    <c-feature />
+    <c-tab-control list='{{title}}' bind:changeIndex="changeIndex" class="tab-control-temp" />
+    <c-goods goodslist="{{goods[currentType].list}}" />
+    <c-back-top bindtap="backtop" wx:if="{{backtopShow}}" />
+  </scroll-view>
+</view>

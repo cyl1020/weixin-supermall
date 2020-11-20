@@ -1,0 +1,32 @@
+<!--pages/detail/childCpns/c-shop-info/c-shop-info.wxml-->
+<view class="shopinfo">
+  <view class="shop">
+    <image class="image" src="{{shopInfo.shopLogo}}" />
+    <text class="name">{{shopInfo.name}}</text>
+  </view>
+  <view class="info">
+    <view class="left">
+      <view class="item">
+        <view class="count">{{shopInfo.cFans}}万</view>
+        <view class="desc">粉丝</view>
+      </view>
+      <view class="item">
+        <view class="count">{{shopInfo.cGoods}}件</view>
+        <view class="desc">宝贝</view>
+      </view>
+      <view class="item">
+        <view class="count">{{shopInfo.cSells}}万</view>
+        <view class="desc">售出</view>
+      </view>
+    </view>
+    <view class="right">
+      <block wx:for="{{shopInfo.score}}" wx:key="index">
+        <view class="score">
+          <text>{{item.name}} : </text>
+          <text class="{{item.isBetter ? 'red' : 'green'}}">{{item.isBetter ? '高' : '低'}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="goshop" bindtap="handleClick">进店逛逛</view>
+</view>

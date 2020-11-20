@@ -1,0 +1,4 @@
+<!--components/c-back-top/c-back-top.wxml-->
+<view class="back-top" style="bottom: {{bottom}}rpx">
+  <image class="image" src="../../images/common/top.png" />
+</view>

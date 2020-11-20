@@ -1,0 +1,18 @@
+/* components/c-swiper/c-swiper.wxss */
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  height: 500rpx;
+}
+
+.swiper .image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper .img {
+  height: 1000rpx;
+}

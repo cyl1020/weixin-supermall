@@ -1,0 +1,15 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+  <scroll-view class="left" scroll-y>
+    <c-category categoryList="{{categoryList}}" bind:categoryIndex="categoryIndex" />
+  </scroll-view>
+  <view class="right">
+    <c-tab-control class="tab-control-temp {{!isShow ? 'none' : ' '}}" list="{{title}}" bind:changeIndex="changeIndex" />
+    <scroll-view class="right-scroll" scroll-y scroll-top="{{scrolltop}}" bindscroll="scroll">
+      <c-content contentList="{{categoryContent}}" />
+      <c-tab-control class="tab-control" list="{{title}}" bind:changeIndex="changeIndex" />
+      <c-goods goodslist="{{categoryDetail}}" />
+      <c-back-top bindtap="backtop" wx:if="{{backtopShow}}"/>
+    </scroll-view>
+  </view>
+</view>

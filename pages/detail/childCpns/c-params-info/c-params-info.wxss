@@ -1,0 +1,56 @@
+/* pages/detail/childCpns/c-params-info/c-params-info.wxss */
+.paramsinfo {
+  padding: 40rpx 30rpx;
+  font-size: 32rpx;
+  border-bottom: 12rpx solid #f2f5f8;
+}
+
+.key {
+  font-size: 36rpx;
+  margin: 0 40rpx;
+  color: #ff5777;
+  line-height: 60rpx;
+}
+
+.size {
+  margin: 0 40rpx;
+  margin-top: 30rpx;
+  display: flex;
+  border-bottom: 2rpx solid rgba(100, 100, 100, .1);
+}
+
+.paramsinfo:last-child .size {
+  margin-bottom: 30rpx;
+}
+
+.item {
+  width: 20%;
+  height: 80rpx;
+  line-height: 80rpx;
+  /* font-size: 36rpx; */
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.info {
+  margin: 0 40rpx;
+  margin-top: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid rgba(100, 100, 100, .1);
+   display: flex;
+}
+
+.itemkey {
+  margin-right: 20rpx;
+  width: 300rpx;
+}
+
+.value {
+  color: rgb(221, 41, 41);
+  width: 460rpx;
+  /* text-overflow: ellipsis; */
+  white-space: nowrap;
+  /* overflow: hidden; */
+  overflow: scroll;
+}

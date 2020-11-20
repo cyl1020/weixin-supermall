@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "c-category": "./childCpns/c-category/c-category",
+    "c-content": "./childCpns/c-content/c-content",
+    "c-tab-control": "../../components/c-tab-control/c-tab-control",
+    "c-goods": "../../components/c-goods/c-goods",
+    "c-back-top": "../../components/c-back-top/c-back-top"
+  },
+  "navigationBarTitleText": "商品分类"
+}

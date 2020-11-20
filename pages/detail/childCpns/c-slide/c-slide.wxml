@@ -1,0 +1,6 @@
+<!--pages/detail/childCpns/c-slide/c-slide.wxml-->
+<view class="silde">
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="item {{currentIndex === index ? 'red' : ''}}" bindtap="handleClick" data-index="{{index}}">{{item}}</view>
+  </block>
+</view>

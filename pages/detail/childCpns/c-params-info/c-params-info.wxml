@@ -1,0 +1,21 @@
+<!--pages/detail/childCpns/c-params-info/c-params-info.wxml-->
+<view class="paramsinfo">
+  <!-- <view class="key">{{paramsInfo.rule.key}}</view> -->
+  <view class="key">商品参数</view>
+  <block wx:for="{{paramsInfo.rule.tables}}" wx:key="index">
+    <block wx:for="{{item}}" wx:key="index">
+      <view class="size">
+        <block wx:for="{{item}}" wx:key="index">
+          <view class="item">{{item}}</view>
+        </block>
+      </view>
+    </block>
+  </block>
+  <!-- <view class="key">{{paramsInfo.info.key}}</view> -->
+  <block wx:for="{{paramsInfo.info.set}}" wx:key="index">
+    <view class="info">
+      <view class="itemkey">{{item.key}}</view>
+      <view class="value">{{item.value}}</view>
+    </view>
+  </block>
+</view>

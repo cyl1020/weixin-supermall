@@ -1,0 +1,4 @@
+<!--pages/category/childCpns/c-category/c-category.wxml-->
+<block wx:for="{{categoryList}}" wx:key="index">
+  <view class="title {{currentIndex === index ? 'active' : ' '}}" bindtap="handleClick" data-index="{{index}}">{{item.title}}</view>
+</block>
